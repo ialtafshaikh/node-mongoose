@@ -5,7 +5,7 @@ const todoSchema = new Schema(
   {
     description: {
       type: String,
-      required: true,
+      required: [true, "please enter task details"],
     },
     completed: {
       type: Boolean,
